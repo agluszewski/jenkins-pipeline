@@ -3,7 +3,7 @@ def CONTAINER_TAG="latest"
 def DOCKER_HUB_USER="agluszewski"
 def HTTP_PORT="80"
 
-node {
+node ('lm-dev') {
 
     stage('Initialize'){
         def dockerHome = tool 'myDocker'
